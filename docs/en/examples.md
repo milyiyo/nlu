@@ -880,7 +880,7 @@ nlu.load('stopwords').predict('I want you to remove stopwords from this sentence
 |token|    cleanTokens|   
 |-----|------------|
 |I|    remove |   
-|want| stopewords |   
+|want| stopwords |   
 |you|  sentence | 
 |to|   None | 
 |remove|   None | 
@@ -1213,7 +1213,7 @@ pipe.predict(data)
 Classify whether one sentence is a re-phrasing or similar to another sentence      
 This is a sub-task of [GLUE](https://arxiv.org/pdf/1804.07461.pdf) and based on [MRPC - Binary Paraphrasing/ sentence similarity classification ](https://www.aclweb.org/anthology/I05-5002.pdf)
 
-```
+```python
 t5 = nlu.load('en.t5.base')
 # Set the task on T5
 t5['t5'].setTask('mrpc ')
